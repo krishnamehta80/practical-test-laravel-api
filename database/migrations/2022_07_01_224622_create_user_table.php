@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('userName', 50);
             $table->string('email', 150);
             $table->string('password');
-            $table->enum('role',['Admin','User'])->default('User');
+            // $table->enum('role',['Admin','User'])->default('User');
             $table->bigInteger('phone');
             $table->date('dob')->nullable();
             $table->timestamps();
